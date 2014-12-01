@@ -5,22 +5,18 @@
   font-family: "Glober";
   src: url("../fonts/GloberThin.otf") format("opentype");
   font-weight: 300; }
-
 @font-face {
   font-family: "Glober";
   src: url("../fonts/GloberSemiBold.otf") format("opentype");
   font-weight: 400; }
-
 @font-face {
   font-family: "Gandhi Sans";
   src: url("../fonts/GandhiSans-Regular.otf") format("opentype");
   font-weight: 300; }
-
 @font-face {
   font-family: "Gandhi Sans";
   src: url("../fonts/GandhiSans-Bold.otf") format("opentype");
   font-weight: 400; }
-
 html {
   width: 100%;
   height: 100%;
@@ -53,11 +49,11 @@ a {
   width: 100%;
   height: 100%;
   background: url(../images/bg.jpg) no-repeat bottom center scroll;
-  filter: brightness(15%);
-  -webkit-filter: brightness(15%);
-  -moz-filter: brightness(15%);
-  -o-filter: brightness(15%);
-  -ms-filter: brightness(15%); }
+  filter: brightness(35%);
+  -webkit-filter: brightness(35%);
+  -moz-filter: brightness(35%);
+  -o-filter: brightness(35%);
+  -ms-filter: brightness(35%); }
 
 #cover {
   display: table;
@@ -125,3 +121,5 @@ a {
   font-weight: 400;
   font-weight: 400;
   text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
