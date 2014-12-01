@@ -2,7 +2,32 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
-$glober: "Roboto";
+@font-face {
+    font-family: "Glober";
+    src: url("../fonts/GloberThin.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Glober";
+    src: url("../fonts/GloberSemiBold.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Gandhi Sans";
+    src: url("../fonts/GandhiSans-Regular.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gandhi Sans";
+    src: url("../fonts/GandhiSans-Bold.otf") format("opentype");
+    font-weight: 400;
+}
+
+$glober: "glober";
+$gandhi: "Gandhi Sans";
 
 html {
     width: 100%;
@@ -66,38 +91,54 @@ a {
             text-align: center;
             
             #title {
-                font-size: 96px;
+                font-size: 128px;
                 font-family: $glober;
                 font-weight: 300;
+                
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            
+            #date {
+                font-size: 70px;
+                font-family: $glober;
+                font-weight: 300;
+                
+                margin-top: 0px;
+                padding-top: 0px;
             }
         }
     }
 }
 
-.getUpdates {
-    margin: 12px auto 0;
-    -webkit-appearance: none;
-    position: relative;
-    display: inline-block;
+#getUpdates {
     width: 200px;
+    line-height: 36px;
+    
     background: rgba(255, 255, 255, 0.27);
-    padding: 20px 20px;
+    margin: 12px;
+    padding: 12px 20px 8px 20px;
+    
     cursor: pointer;
     border: 0;
     color: #fff;
+    
     font-size: 18px;
-    font-family: 'Outage';
-    font-weight: 300;
+    font-family: 'Glober', 'Open Sans';
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
+    
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
+    
+    -webkit-appearance: none;
 }
 
-.getUpdates:hover {
+#getUpdates:hover {
     background: rgba(255, 255, 255, 0.42);
     color: #fff;
     text-decoration: none;
