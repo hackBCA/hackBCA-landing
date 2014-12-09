@@ -5,18 +5,22 @@
   font-family: "Glober";
   src: url("../fonts/GloberThin.otf") format("opentype");
   font-weight: 300; }
+
 @font-face {
   font-family: "Glober";
   src: url("../fonts/GloberSemiBold.otf") format("opentype");
   font-weight: 400; }
+
 @font-face {
   font-family: "Gandhi Sans";
   src: url("../fonts/GandhiSans-Regular.otf") format("opentype");
   font-weight: 300; }
+
 @font-face {
   font-family: "Gandhi Sans";
   src: url("../fonts/GandhiSans-Bold.otf") format("opentype");
   font-weight: 400; }
+
 html {
   width: 100%;
   height: 100%;
@@ -48,7 +52,12 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
-  
+  background: url(../images/bg.jpg) no-repeat bottom center scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
   filter: brightness(35%);
   -webkit-filter: brightness(35%);
   -moz-filter: brightness(35%);
@@ -57,19 +66,16 @@ a {
 
 #cover {
   display: table;
-  z-index: 0;
+  z-indx: 0;
   width: 100%;
   height: 100%;
-  color: #FFF; 
-
-
-    background: url(../images/bg.jpg) no-repeat bottom center scroll;
+  color: #FFF;
+  background: url(../images/bg.jpg) no-repeat bottom center scroll;
   background-size: cover;
   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
   #cover #container {
     display: table-cell;
     vertical-align: middle; }
@@ -88,6 +94,19 @@ a {
         font-weight: 300;
         margin-top: 0px;
         padding-top: 0px; }
+      @media screen and (max-width: 720px) {
+        #cover #container #content #title {
+          font-size: 81px;
+          font-family: "glober";
+          font-weight: 300;
+          margin-bottom: 0px;
+          padding-bottom: 0px; }
+        #cover #container #content #date {
+          font-size: 38px;
+          font-family: "glober";
+          font-weight: 300;
+          margin-top: 0px;
+          padding-top: 0px; } }
 
 #getUpdates {
   display: block;
@@ -131,4 +150,6 @@ a {
   font-weight: 400;
   text-align: center; }
 
-/*# sourceMappingURL=styles.css.map */
+@media screen and (max-width: 720px) {
+  #email-form {
+    max-width: 380px; } }

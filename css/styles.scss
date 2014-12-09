@@ -85,6 +85,12 @@ a {
     height: 100%;
     
     color: #FFF;
+    background: url(../images/bg.jpg) no-repeat bottom center scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     
     #container {
         display: table-cell;
@@ -110,6 +116,26 @@ a {
                 
                 margin-top: 0px;
                 padding-top: 0px;
+            }
+            
+            @media screen and (max-width: 720px) {
+                #title {
+                    font-size: 81px;
+                    font-family: $glober;
+                    font-weight: 300;
+
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+
+                #date {
+                    font-size: 38px;
+                    font-family: $glober;
+                    font-weight: 300;
+
+                    margin-top: 0px;
+                    padding-top: 0px;
+                }
             }
         }
     }
@@ -164,4 +190,10 @@ a {
     font-weight: 400;
     font-weight: 400;
     text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    #email-form {
+        max-width: 380px;
+    }
 }
