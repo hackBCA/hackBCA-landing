@@ -66,7 +66,7 @@ a {
     height: 100%;
     
     background: url(../images/bg.jpg) no-repeat bottom center scroll;
-    
+    background-size: cover;
     filter: brightness(35%);
     -webkit-filter: brightness(35%);
     -moz-filter: brightness(35%);
