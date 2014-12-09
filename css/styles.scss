@@ -67,6 +67,10 @@ a {
     
     background: url(../images/bg.jpg) no-repeat bottom center scroll;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     filter: brightness(35%);
     -webkit-filter: brightness(35%);
     -moz-filter: brightness(35%);
