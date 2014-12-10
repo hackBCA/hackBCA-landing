@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
 @font-face {
   font-family: "Glober";
   src: url("../fonts/GloberThin.otf") format("opentype");
@@ -51,7 +52,7 @@ a {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: url(../images/bg.jpg) no-repeat bottom center scroll;
   background-size: cover;
   -webkit-background-size: cover;
@@ -66,16 +67,11 @@ a {
 
 #cover {
   display: table;
-  z-indx: 0;
+  z-index: 0;
   width: 100%;
-  height: 100%;
-  color: #FFF;
-  background: url(../images/bg.jpg) no-repeat bottom center scroll;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
+  height: auto;
+  padding: 5vh 5px;
+  color: #FFF; }
   #cover #container {
     display: table-cell;
     vertical-align: middle; }
