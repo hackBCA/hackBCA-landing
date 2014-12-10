@@ -186,6 +186,28 @@ a:focus { text-decoration: none; }
     }
 }
 
+.colorbar {
+    height: 150px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	margin: 0;
+    /* background: url(polygon.svg); */
+    /* background: url(../img/cropped.svg) no-repeat bottom center scroll; */
+    background: linear-gradient(45deg, #384955, #85505f, #412e4c);
+    background-size: 100% auto;
+	background-color: $colour-purple;
+	color: $colour-white;
+}
+
 #footer {
     background-color: #1D1D1D;
 }
