@@ -196,6 +196,10 @@ a:focus {
   -o-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
   -webkit-appearance: none; }
+  #getUpdates:active {
+    -webkit-appearance: none; }
+  #getUpdates:focus {
+    -webkit-appearance: none; }
 
 #getUpdates:hover {
   font-size: 18px;
@@ -203,7 +207,8 @@ a:focus {
   font-weight: 400;
   background: rgba(255, 255, 255, 0.42);
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-appearance: none; }
 
 .hackBCAI {
   text-align: center;
@@ -237,6 +242,13 @@ a:focus {
   font-family: 'Glober', 'Open Sans';
   font-weight: 400;
   text-align: center; }
+  #email-form:valid {
+    color: #6c9b27; }
+  #email-form:invalid {
+    color: #c61130; }
+  #email-form:hover, #email-form:active, #email-form:focus {
+    outline: 0px !important;
+    -webkit-appearance: none; }
 
 @media screen and (max-width: 720px) {
   #email-form {

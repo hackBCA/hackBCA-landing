@@ -58,7 +58,7 @@
         <section id="footer">
             <h1 class="joinHS">Join the HS Revolution</h1>
             <div id="form">
-                <input type="text" class="email" id="email-form" name='email' placeholder="Enter Your Email">
+                <input type="email" class="email" id="email-form" name='email' placeholder="Enter Your Email">
 
                 <button id="getUpdates" onclick="x()">
                     <span>Get Updates</span>
@@ -77,16 +77,20 @@
                 url: 'http://hackbca.herokuapp.com/',
                 data: {'email':$('.email').val()},
                 success: function(data){
-                    if(data == "success"){
+                    if (data == "success") {
                         $('.error').remove();
                         $('#form').remove();
                         $('#content').append('<h3>We will email you soon!</h3>');
-                    }else if(data == 'Cannot leave blank!'){
+                    }
+                    
+                    else if (data == 'Cannot leave blank!') {
                         $('.error').remove();
-                        $('#content').append('<h3 class="error" style="color:#e74c3c">Cannot leave blank!</h3>');
-                    }else{
+                        //$('#content').append('<h3 class="error" style="color:#e74c3c">Cannot leave blank!</h3>');
+                    }
+                    
+                    else {
                         $('.error').remove();
-                        $('#content').append('<h3 class="error" style="color:#e74c3c">Enter valid email!</h3>');
+                        //$('#content').append('<h3 class="error" style="color:#e74c3c">Enter valid email!</h3>');
                     }
                 }
             });

@@ -259,6 +259,14 @@ a:focus { text-decoration: none; }
     -ms-transition: all 0.25s ease-in-out;
     
     -webkit-appearance: none;
+    
+    &:active {
+        -webkit-appearance: none;
+    }
+    
+    &:focus {
+        -webkit-appearance: none;
+    }
 }
 
 #getUpdates:hover {
@@ -268,6 +276,7 @@ a:focus { text-decoration: none; }
     background: rgba(255, 255, 255, 0.42);
     color: #fff;
     text-decoration: none;
+    -webkit-appearance: none;
 }
 
 .hackBCAI {
@@ -310,6 +319,19 @@ a:focus { text-decoration: none; }
     font-family: 'Glober', 'Open Sans';
     font-weight: 400;
     text-align: center;
+    
+    &:valid {
+      color: $colour-green;
+    }
+
+    &:invalid {
+      color: $colour-red;
+    }
+
+    &:hover, &:active, &:focus {
+        outline: 0px !important;
+        -webkit-appearance:none;
+    }
 }
 
 @media screen and (max-width: 720px) {
