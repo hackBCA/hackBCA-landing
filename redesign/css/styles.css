@@ -137,17 +137,19 @@ a:focus {
           padding-top: 0px; } }
 
 .colorbar {
-  height: 150px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  justify-content: center;
+  padding: 35px 5px;
+    /*
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center; */
+  text-align: center;
   width: 100%;
   margin: 0;
   /* background: url(polygon.svg); */
@@ -156,9 +158,23 @@ a:focus {
   background-size: 100% auto;
   background-color: #432737;
   color: white; }
+  .colorbar h1 {
+    font-size: 42px;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu"; }
+  .colorbar h2 {
+    font-size: 24px;
+    color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    font-family: "Ubuntu";
+    font-weight: 300; }
 
 #footer {
-  background-color: #1D1D1D; }
+  background-color: #1D1D1D;
+  margin: 0; }
 
 #getUpdates {
   display: block;
