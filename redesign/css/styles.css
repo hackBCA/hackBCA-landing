@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 @font-face {
   font-family: "Glober";
   src: url("../fonts/GloberThin.otf") format("opentype");
@@ -22,6 +23,24 @@
   src: url("../fonts/GandhiSans-Bold.otf") format("opentype");
   font-weight: 400; }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.otf") format("opentype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Semibold.otf") format("opentype");
+  font-weight: 500; }
+
+/* FONTS */
+/* COLOURS */
+/* MEDIA */
 html {
   width: 100%;
   height: 100%;
@@ -44,26 +63,35 @@ a {
   -ms-transition: border-bottom-color 0.25s ease-in-out;
   transition: border-bottom-color 0.25s ease-in-out; }
 
+a:hover {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+a:focus {
+  text-decoration: none; }
+
 #background {
-  position: absolute;
+  position: fixed;
   z-index: -999;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: auto;
-  background: url(../images/bg.jpg) no-repeat bottom center scroll;
+  height: 100%;
+  background: url(../images/HackBCA.jpg) no-repeat bottom center scroll;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  filter: brightness(35%);
-  -webkit-filter: brightness(35%);
-  -moz-filter: brightness(35%);
-  -o-filter: brightness(35%);
-  -ms-filter: brightness(35%); }
+  filter: brightness(30%);
+  -webkit-filter: brightness(30%);
+  -moz-filter: brightness(30%);
+  -o-filter: brightness(30%);
+  -ms-filter: brightness(30%); }
 
 #cover {
   display: table;
@@ -79,30 +107,37 @@ a {
       padding: 50px 25px;
       text-align: center; }
       #cover #container #content #title {
-        font-size: 128px;
-        font-family: "glober";
+        font-size: 136px;
+        font-family: "Proxima Nova";
         font-weight: 300;
         margin-bottom: 0px;
         padding-bottom: 0px; }
-      #cover #container #content #date {
-        font-size: 70px;
-        font-family: "glober";
+      #cover #container #content #motto {
+        font-size: 48px;
+        font-family: "Ubuntu";
         font-weight: 300;
-        margin-top: 0px;
+        margin-top: -5px;
         padding-top: 0px; }
+      #cover #container #content #date {
+        font-size: 24px;
+        font-family: "Ubuntu";
+        font-weight: 300; }
       @media screen and (max-width: 720px) {
         #cover #container #content #title {
           font-size: 81px;
-          font-family: "glober";
+          font-family: "Proxima Nova";
           font-weight: 300;
           margin-bottom: 0px;
           padding-bottom: 0px; }
-        #cover #container #content #date {
+        #cover #container #content #motto {
           font-size: 38px;
-          font-family: "glober";
+          font-family: "Ubuntu";
           font-weight: 300;
           margin-top: 0px;
           padding-top: 0px; } }
+
+#footer {
+  background-color: #1D1D1D; }
 
 #getUpdates {
   display: block;
@@ -135,15 +170,10 @@ a {
   text-decoration: none; }
 
 .hackBCAI {
-  position: absolute;
-  width: 200px;
-  bottom: 0;
-  left: 50%;
-  margin-left: -100px;
   text-align: center;
   color: rgba(255, 255, 255, 0.72);
   font-size: 18px;
-  font-family: 'Glober', 'Open Sans';
+  font-family: 'Ubuntu', 'Open Sans';
   font-weight: 400;
   transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
